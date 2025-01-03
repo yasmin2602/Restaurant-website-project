@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body id="homepage">
+        <!--Header image from shutterstock by Natalia Lisovskaya-->
+        <div id="header_image">
+            <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg" alt="Variety of indian dishes" height="300px" width="100%">
+        </div>
+        <!--Navbar code inspired from w3schools Responsive Top Navbar link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav-->
+        <nav class="navbar" id="myNavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">About us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="booking.html#booktable">Booking</a></li>
+                <li><a href="Topical.html">Topical</a></li>
+                <li><a href="Accessibility.html">Accessibility</a></li>
+                <li class="icon"> <a href="javascript:void(0);" onclick="myFunction(this)">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+        <h1>Jasmin's restaurant</h1>
+        <p class="underheader">Welcome to our Indian restuartant. Take a trip to India with us, we bring you the soul of India through our delcious ethnic dishes.</p>
+        <div class="grid_area_homepage">
+            <div class="columns_homepage">
+                <!--The image is taken from pixels.com by Shantanu Pal-->
+                <img class="gridimage_homepage" src="https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="spices on spoons">
+                <div class="text_in_grid">
+                    <h2 >Welcome</h2>
+                    <p>Would you like to know more about us? Click the button below.</p>
+                    <a class="button" href="booking.html#aboutus">More about us</a>
+                </div>
+            </div>
+            <div class="columns_homepage">
+                <!--The image is taken from pixels.com from Leeloo Thefirst-->
+                <img class="gridimage_homepage" src="https://images.pexels.com/photos/4676640/pexels-photo-4676640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="restaurant table">
+                <div class="text_in_grid">
+                    <h2>Booking</h2>
+                    <p>Click the button below to book your table or for reservation of our premise.</p>
+                    <a class="button"href="booking.html">Booking page</a>
+                </div>
+            </div>
+            <div class="columns_homepage">
+                <!--The image is taken from pixels.com from Ketut Subiyanto-->
+                <img class="gridimage_homepage" src="https://images.pexels.com/photos/4473360/pexels-photo-4473360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="open sign">
+                <div class="text_in_grid">
+                    <h2>Opening hours</h2>
+                    <p>Monday - Friday 10:00-16:00 </p>
+                    <p> Saturday 10:00-17:00 </p>
+                    <p>Sunday closed</p>
+                </div>
+            </div>
+            <div class="columns_homepage">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2010.0669000633402!2d10.0108333!3d59.748333300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464121375d1446dd%3A0x1f4b6a4138f5bed1!2sJasmin%20restaurant!5e0!3m2!1sen!2sno!4v1669154147569!5m2!1sen!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"style="float:left"> </iframe>
+                <address>
+                    <div class="text_in_grid">
+                        <h2>Our address</h2>
+                        <p>Osloveien 5, 0686 Oslo Norge</p>
+                        <a target="_blank" class="button" href="https://www.google.com/maps/place/Jasmin+restaurant/@59.748333,10.0020785,15z/data=!3m1!4b1!4m5!3m4!1s0x464121375d1446dd:0x1f4b6a4138f5bed1!8m2!3d59.7483653!4d10.0108567">In google maps</a>
+                    </div>
+                </address>
+            </div>
+        </div>
+        <footer>
+            <p>Contact us here by:</p>
+            <p><a href="tel:+4748567944">Phone: +4748567944</a></p>
+            <p><a href="mailto:jasminrestaurant@gmail.com">Email: jasminrestaurant@gmail.com</a></p>
+            <p><a href="#top">To the top of the page</a></p>
+        </footer>
+        <a href="booking.html#booktable" class="button" id="reservationbutton">
+            <p>Book your table here</p>
+        </a>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myNavbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+    </body>
+</html>

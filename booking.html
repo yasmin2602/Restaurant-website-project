@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservation Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <!--Navbar code inspired from w3schools Responsive Top Navbar link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav-->
+        <nav class="navbar" id="myNavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">About us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="booking.html#booktable">Booking</a></li>
+                <li><a href="Topical.html">Topical</a></li>
+                <li><a href="Accessibility.html">Accessibility</a></li>
+                <li class="icon"> <a href="javascript:void(0);" onclick="myFunction(this)">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+        <div id="sidebar_booking">
+            <a href="#aboutus">About our place</a>
+            <a href="#location">Our location</a>
+            <a href="#booktable">Book your table</a>
+            <a href="#reservation">Book for events</a>
+            <a href="#contactus">Contact us</a>
+        </div>
+        <h1> Our Restaurant </h1>
+        <section id="bookingpage">
+            <div id="aboutus">
+                <h2 class="secondheader"><b>About our place</b></h2>
+                <p> Our Restaurant is all about bringing Indian culture to people. We intend to bring you an experience of India through our variety of delicious ethnic foods.</p>
+                <p> We also provide booking of our restaurant for small gatherings of no more than 30 people. We have a great area for special occations such as birthday parties, small wedding receptions, and other gatherings.</p>
+                <div id="images_booking">
+                    <div  class="columnimage_booking">
+                        <!--The picture is from pexels.com by Gokul Barman site: https://www.pexels.com/photo/woman-showing-mehndi-tattoo-1345352/-->
+                        <img id="image1_booking" src="https://images.pexels.com/photos/1345352/pexels-photo-1345352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="woman with a henna tatto on hand">
+                        <!--The picture is from pexels.com by Gillian Harrison site:https://www.pexels.com/photo/photo-of-flowers-on-top-of-wooden-table-4668539/-->
+                        <img id="image2_booking" src="https://images.pexels.com/photos/4668539/pexels-photo-4668539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="ornament flowers on table">
+                    </div>
+                    <div  class="columnimage_booking">
+                        <!--The picture is from pexels.com by Rene Asmussen site:https://www.pexels.com/nb-no/bilde/hus-bord-arkitektur-luksus-1581384/-->
+                        <img id="image3_booking" src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="picture of our tables">
+                        <!--The picture is from pexels.com by cottonbro studio site:https://www.pexels.com/photo/menorah-with-red-and-orange-candles-4038215/-->
+                        <img id="image4_booking" src="https://images.pexels.com/photos/4038215/pexels-photo-4038215.jpeg" alt="wedding">
+                    </div>
+                </div>
+            </div>
+            <div id="location">
+                <h2 class="secondheader"><b>Our location</b></h2>
+                <p>Our restaurant is located, in a beautiful area, no car noises, and a beautiful park nearby, where its possible to take great pictures.<p>
+                <iframe id="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2010.0669000633402!2d10.0108333!3d59.748333300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464121375d1446dd%3A0x1f4b6a4138f5bed1!2sJasmin%20restaurant!5e0!3m2!1sen!2sno!4v1669154147569!5m2!1sen!2sno" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p><a href="https://www.google.com/maps/place/Jasmin+restaurant/@59.748355,10.010898,16z/data=!4m5!3m4!1s0x0:0x1f4b6a4138f5bed1!8m2!3d59.7483653!4d10.0108567?hl=en">Press here to open in google maps</a></p>
+            </div>
+            <div id="booktable">
+                <h2 class="secondheader"><b>Book your table</b></h2>
+                <p>Welcome, fill out this form and you will get a message once your table has been confirmed:</p>
+		    <p>All the boxes with a " * " must be filled out for the form to be recieved.</p>
+
+                <form id="reservationform">
+                    <label for="date"> <b>Write the date and time you want to visit us*</b> </label>
+                    <input type="date" placeholder="The date you want to visit us*">
+                    <input type='time' id="time">
+			 <label for="text">Write your full name:*</label>
+                    <input type="text" placeholder="Full Name*" >
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" >
+                    <input type="number" placeholder="How many people?*" min="1" >
+                    <label for="comments">Special Requests</label>
+                    <textarea name="comments" cols="50" rows="5" placeholder="Write comment here"></textarea>
+                    <input type = "submit" submit="BOOK TABLE" onclick="alert('Thank you! We will send you a confirmation mail once your table has been succesfully booked!')" value="Book your table">
+                </form>
+            </div>
+            <div id="reservation">
+                <h2 class="secondheader"><b>Book our place for events</b></h2>
+                <p>Our premise will give you a wonderful experience</p>
+		    <p>All the boxes with a " * " must be filled out for the form to be recieved.</p>
+                <form id="bookingform">
+                    <label for="date"><b>Write the date you want to visit us*</b> </label>
+                    <input type="date">
+                    <input type="tel" placeholder="Phone Number*" >
+                    <input type="email" placeholder="Email*">
+              <label for="text">Write your full name:*</label>
+
+                    <input type="text" placeholder="First name*" >
+                    <input type="text" placeholder="Second name*" >
+ 			 <input type="number" placeholder="How many people?*" min="1" >
+
+                    <label for="comments">Special Requests</label>
+                    <textarea name="comments" cols="50" rows="5" placeholder="Write comment here"></textarea>
+                    <input type = "submit" submit="BOOK TABLE" onclick="alert('Thank you! We will send you a confirmation mail once your table has been succesfully booked!')" value="Book your table">
+                </form>
+            </div>
+            <div id="contactus">
+                <h2 class="secondheader"><b>Contact us</b></h2>
+                <p>If you have any questions regarding the booking of our premise or questions about the arrangment please contact us here:</p>
+                <p>You are welcome to send us a message or call us</p>
+                <p><a href="tel:+4748567944">Contact us here +4748567944</a></p>
+                <p>We can also be reached on our email:</p>
+                <p><a href="mailto:jasminrestaurant@gmail.com">Email: jasminrestaurant@gmail.com</a></p>
+            </div>
+        </section>
+        <footer>
+            <p><a href="#top">To the top of the page</a></p>
+        </footer>
+        <a href="#booktable" class="button" id="reservationbutton" ><p>Book your table</p></a>
+        <!--JavaScript code from w3schools Responsive Top Navbar link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav-->
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
+    </body>
+</html>
